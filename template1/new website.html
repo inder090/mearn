@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        * {
+
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 20px;
+            background-color: aliceblue;
+            position: fixed;
+            height: 50px;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .links {
+            position: absolute;
+            right: 0%;
+            padding: 25px;
+        }
+
+        .links>a {
+            padding: 20px;
+            font-size: larger;. 
+            text-decoration: none;
+            color: black;
+            letter-spacing: 2px;
+        }
+
+        .br {
+            display: flex;
+            background-image: url("architect.jpg");
+            height: 100vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .projects {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 15px;
+
+
+        }
+
+
+        .m {
+            border: 1px solid black;
+            height: 200px;
+            width: 24%;
+            margin: 5px;
+        }
+
+        .m>p {
+
+            position: relative;
+            bottom: 200px;
+            background-color: black;
+            display: inline;
+            color: white;
+            padding: 5px;
+        }
+
+        .text {
+            font-size: large;
+            text-align: justify;
+            padding: 20px;
+        }
+        .about{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-between ;
+            margin: 15px;
+        }
+       .card{
+       
+        width: 22%;
+        height:400px;
+        margin: 15px;
+       } 
+       button{
+        width: 100%;
+        font-size: large;
+        border: none;
+       }
+       button:hover{
+        background-color: antiquewhite;
+       }
+       input{
+        width: 90%;
+        padding: 15px;
+        margin: 10px;
+       }
+       .send{
+         background-color: black;
+         color: white;
+         border: 1px solid black;
+         
+         height: 25px;
+         width: auto;
+       }
+       .send:hover{
+        background-color: burlywood;
+        color: black;
+       }
+       .footer{
+        display: flex;
+        background-color: black;
+        height: 100px;
+        width: 100%;
+        color: white;
+        justify-content: center;
+        align-items: center;
+                
+       }
+       .form{
+        margin: 15px;
+       }
+       .map{
+        margin: 15px;
+       }
+       .margin{
+        margin: 15px;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2> <b>BR</b> Architects</h2>
+            <div class="links">
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contect</a>
+            </div>
+        </div>
+        <div class="br">
+            <h1>BR Architects</h1>
+        </div>
+    <div class="margin">
+        <div>
+            <h1>Projects</h1>
+            <hr>
+        </div>
+
+        <div class="projects" id="projects">
+            <div class="img1 m"><img src="house2.jpg" alt="" height="100%" width="100%">
+                <P>Summer House</P>
+            </div>
+            <div class="img2 m"><img src="house3.jpg" alt="" height="100%" width="100%">
+                <p>Brick House</p>
+            </div>
+            <div class="img3 m"><img src="house4.jpg" alt="" height="100%" width="100%">
+                <p>Renovated</p>
+            </div>
+            <div class="img4 m"> <img src="house5.jpg" alt="" height="100%" width="100%">
+                <p>Barn House</p>
+            </div>
+            <div class="img5 m"> <img src="house5.jpg" alt="" height="100%" width="100%">
+                <p>Barn House</p>
+            </div>
+            <div class="img6 m"><img src="house4.jpg" alt="" height="100%" width="100%">
+                <p>Renovated</p>
+            </div>
+            <div class="img7 m"><img src="house2.jpg" alt="" height="100%" width="100%">
+                <P>Summer House</P>
+            </div>
+            <div class="img8 m"><img src="house3.jpg" alt="" height="100%" width="100%">
+                <p>Brick House</p>
+            </div>
+    </div>
+        <div id="about">
+            <h1 >About</h1>
+            <hr>
+
+        </div>
+        <div class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat
+        </div>
+        <div class="about">
+            <div class="card">
+                <img src="team2.jpg" alt="" width="100%">
+                <h1>John Doe</h1><br>
+                <h3>CEO & Founder</h3><br>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>CONTACT</button>
+                            
+            </div>
+            <div class="card">
+                <img src="team1.jpg" alt="" width="100%">
+                <h1>Jane Doe</h1><br>
+                <h3>Architect</h3><br>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>CONTACT</button>
+            </div>
+            <div class="card">
+                <img src="team3.jpg" alt="" width="100%">
+                <h1>Mike Ross</h1><br>
+                <h3>Architect</h3><br>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>CONTACT</button>
+            </div>
+            <div class="card">
+                <img src="team4.jpg" alt="" width="100%">
+                <h1>Dan Star</h1><br>
+                <h3>Architect</h3><br>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>CONTACT</button>
+                
+            </div>
+
+        </div>
+
+        <div id="contact">
+            <h1>Contact</h1><hr><br>
+            <p>Lets get in touch and talk about your next project.</p>
+        </div>
+        <form action="" class="form">
+            <input type="name" placeholder="Name"><br>
+            <input type="email" placeholder="E-mail"><br>
+            <input type="text" placeholder="Subject"><br>
+            <input type="text" placeholder="Comment"><br>
+            <button class="send">SEND MESSAGE</button>
+        </form>
+        <div class="map">
+            <img src="map.jpg" alt="" width="100%" height="100%">
+        </div>
+    </div>
+        <div class="footer"> Powered by Inder Singh </div>
+
+    </div>
+</body>
+
+</html>

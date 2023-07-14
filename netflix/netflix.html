@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .container{
+
+            height: 100vh;
+        }
+        .bg{
+            filter: brightness(50%);
+            background-image: url("netflix.jpg");
+            background-size: cover;
+            height: 170%;
+            
+        }
+        .logo{
+            position: absolute;
+            top: 3%;
+            margin-left:3% ;
+        }
+        .box{
+            border: 1px solid black;
+            border-radius: 10px;
+            height: 80%;
+            width: 22%;
+            background-color:rgba(0,0,0,.75);
+            color: white;
+            position: absolute;
+            top: 15%;
+            left: 35%;
+        
+            padding: 5%;
+            
+        }
+        
+        input{
+            width: 100%;
+            height: 50px;
+            margin-top: 15px;
+            background-color: #333;
+            padding-left: 5px;
+            font-size: large;
+            border: none;
+          
+            
+        }
+        button{
+            width: 102%;
+            height: 50px;
+            background-color: red;
+            color: white;
+            margin-top: 30px;
+            border-radius: 7px;
+            border: none;
+          
+        }
+        #checkbox{
+            height: 20px;
+            width: 15px;
+        }
+        .help{
+            
+            text-decoration: none;
+            color: aliceblue;
+          
+        }
+        #sign{
+            color: white;
+            text-decoration: none;
+            font-style: bold;
+            
+        }
+        #font{
+            font-size:small;
+        }
+
+        .footer{
+
+            width: 100%;
+            height: 45%;
+            color: white;
+            position: absolute;
+            top: 870px;
+            background-color: rgba(0,0,0,.75);
+        }
+        .links{
+           
+            color: #b3b3b3;
+            text-decoration: none;
+            padding: 100px;
+            line-height: 50px;
+      
+           
+        }
+        .links1{
+           
+           color: #b3b3b3;
+           text-decoration: none;
+           padding-left: 100px;
+          
+          
+        }
+        .links:hover{
+            
+            text-decoration: underline;
+        }
+        .links1:hover{
+            
+            text-decoration: underline;
+        }
+        .language{
+           padding-left: 100px;
+           padding-top: 50px;
+        }
+        select{
+            height: 50px;
+            width: 100px;
+            background-color: rgba(0,0,0,.75);
+            color: white;
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bg"><img src="netflix.jpg" alt="" width="100%" height="105%" > </div>
+
+        <div class="logo"><img src="pngwing.com (1).png" alt="" height="10%" width="15%"></div>
+
+        <div class="box">
+        
+                <h1> Sign In </h1>
+                <input type="text"  placeholder="Email Or Phone No" ><br>
+                <input type="password" placeholder="password">
+                <button>Sign In</button>
+                <input type="checkbox" name="" id="checkbox" ><sup>Remember me</sup>
+                <a href="" class="help"><sup>Need help?</sup></a><br><br><br><br>
+                <span>New to Netflix? </span>
+                <a href="" id="sign"><b>Sign up now </b></a><br><br>
+                <div id="font">
+                <span >This page is protected by Google reCAPTCHA to ensure you're not a bot.</span>
+                <a href="" style="text-decoration: none; color: blue;">Learn more</a>
+                </div>
+                
+            
+           
+        </div>
+
+        <div class="footer">
+           <p style="padding-left: 100px;  padding-top: 30px; line-height: 50px;"> Questions? Call 000-800-919-1694</p>
+           <a href="" class="links">FAQ</a>
+           <a href="" class="links">Help Centre</a>
+           <a href="" class="links">Terms of Use</a>
+           <a href="" class="links">Privacy</a><br>
+           <a href="" class="links1">Cookie Preferences</a>
+           <a href="" class="links1">Corporate Information</a>
+           <div class="language">
+            
+            <select name="" id="">
+                 
+            <option value="" >हिन्दी</option> 
+             <option value="">English</option>
+            </select>
+            </div>
+        </div>
+       
+   
+
+    </div>
+</body>
+</html>
